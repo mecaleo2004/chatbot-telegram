@@ -15,7 +15,7 @@ services:
       - N8N_GIT_NODE_DISABLE_BARE_REPOS=true
 
       ## OpenWeather
-      - OPENWEATHER_API_KEY=ff9f20e8b768c4fe8f21dabb0e2a7b79
+      - OPENWEATHER_API_KEY=
 
       ## Postgres
       - DB_TYPE=postgresdb
@@ -56,7 +56,7 @@ services:
       - N8N_GIT_NODE_DISABLE_BARE_REPOS=true
 
       ## OpenWeather
-      - OPENWEATHER_API_KEY=ff9f20e8b768c4fe8f21dabb0e2a7b79
+      - OPENWEATHER_API_KEY=
 
       ## Postgres
       - DB_TYPE=postgresdb
@@ -113,7 +113,7 @@ services:
       - ngrok-data:/etc
     command: http n8n-editor-ftr:5678 --url=https://equator-establish-blooming.ngrok-free.dev
     environment:
-      - NGROK_AUTHTOKEN=3JN50BFuTrRPRt61cPwg3WfvUuC_5tH6wMoKE8SybHyomEuux
+      - NGROK_AUTHTOKEN=
     restart: always
     networks:
       - n8n-ftr
